@@ -7,4 +7,51 @@ const score = document.getElementById('final-score');
 const initialsPlaceholder = document.getElementById('initials');
 const submit = document.getElementById('submit-score');
 
+let shuffledQuestions, currentQuestionIndex; 
+let quizTime = 60; 
+let timer; 
 
+startButton.addEventListener('click', startQuiz);
+submit.addEventListener('click', saveScore); 
+
+function startQuiz() {
+
+}
+
+function updateClock() {
+
+}
+
+function nextQuestion() {
+
+}
+
+function displayQuestions() {
+
+}
+
+function reset() {
+
+}
+
+function selectAnswer() {
+
+}
+
+function QuizOver() {
+
+}
+
+function saveScore() {
+
+}
+
+const questions = [
+    {
+        question: 'What does HTML stand for?',
+        answer: [
+            {text:""},
+            {text:""},
+        ]
+    },
+];
