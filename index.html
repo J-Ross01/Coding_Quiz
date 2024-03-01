@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <button id="start">Start!</button>
+            <div id="clock">Time: <span id="time">60</span></div>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-btn" class="btn-grid"></div>
+        </div>
+        <div id="end-slide" class="hide">
+            <h1>Your Finished!</h1>
+            <p>Score: <span id="final-score"></span></p>
+            <input type="text" id="initials" placeholder="Enter your initial score">
+            <button id="submit-score">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
