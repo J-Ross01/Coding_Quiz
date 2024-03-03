@@ -24,11 +24,17 @@ setNextQuestion();
 }
 
 function updateClock() {
-
+    if (quizTime <= 0) {
+    endgame();
+    } else {
+    quizTime--;
+    timerElement.textContent = quizTime;
+    }
 }
 
 function nextQuestion() {
-
+resetState();
+displayQuestions(displayQuestions[currentQuestionIndex]);
 }
 
 function displayQuestions() {
