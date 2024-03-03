@@ -15,7 +15,12 @@ startButton.addEventListener('click', startQuiz);
 submit.addEventListener('click', saveScore); 
 
 function startQuiz() {
-
+startButton.classList.add('hide');
+shuffledQuestions = questions.sort(()=> Math.random() - .5);
+currentQuestionIndex = 0;
+questionContainerElement.classList.remove('hide');
+timer = setInterval(updateTimer, 1000);
+setNextQuestion();
 }
 
 function updateClock() {
