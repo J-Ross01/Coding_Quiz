@@ -18,9 +18,9 @@ function startQuiz() {
 startButton.classList.add('hide');
 shuffledQuestions = questions.sort(()=> Math.random() - .5);
 currentQuestionIndex = 0;
-questionContainerElement.classList.remove('hide');
+questionContainer.classList.remove('hide');
 timer = setInterval(updateTimer, 1000);
-setNextQuestion();
+nextQuestionextQuestion();
 }
 
 function updateClock() {
